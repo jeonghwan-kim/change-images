@@ -35,7 +35,7 @@ function btnHandler() {
 // (2) 초기 이미지 로딩 및 크기 조절
 window.onload = function() {
     document.getElementById("btn").value = "Change images!";
-    document.getElementById("btn").onclick = function() {btnHandler()};
+    document.getElementById("btn").onclick = btnHandler;
     loadImg();
     trimImageSize();
 }   
